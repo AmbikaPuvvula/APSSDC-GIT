@@ -1,0 +1,1 @@
+Another file is made to know how to save files from staging area to working repository and how to commit files using vim editor and normal commit 
