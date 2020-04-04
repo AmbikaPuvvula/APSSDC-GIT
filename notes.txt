@@ -1,0 +1,46 @@
+After installing git 
+For windows right click on desktop and open gitbash
+To check git version use command git  --version
+git config – global user.name “username”
+git config – global user.email “email”
+
+
+working directory = project folder
+repository – place where you save the project versions
+ls --- files or command in that particular folder
+git init – initialize new repository and also creates a folder called .git (folder is invisible). This .git folder have all the work you have done.
+ls-a – shows all files and folders even the  hidden ones also.
+To create file in the working folder use command 
+	touch filename.extension – it works for windows also
+To show the content in the file
+	cat filename.extension
+To save the file to the git 
+Add files to staging area by using command 
+	git add filename1 filename2 
+if filename has space use escape sequence i.e backslash\
+Another way i.e to add all files in working directory
+	git add.
+Want to remove files from working directory
+	git rm –cached filename
+To know the files in staging area 
+	git status
+want to save files in the staging area in to repository with a snapshot(40 char sha key and  with commit message)
+	git commit
+for commit there are two ways
+	 using vim editor
+	direct commit
+It opens the vim editor 
+	In vim editor type the commit msg
+For Windows:
+	Press esc and type :wq enter
+
+For Linux:
+	Ctrl + o
+	Enter
+	Ctrl + x
+Another way is git commit -m “Commit Msg”
+
+Another command to show the log of all the commits we made in reverse chronological order.
+	git log
+	recent commit shows first
+git log --oneline first – commit log shorter by only displaying 7 characters of commit SHA key
